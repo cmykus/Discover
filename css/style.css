@@ -1,4 +1,100 @@
-* {
+/*#region===========COMMONS==========*/
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
+html {
+  --white: #fff;
+  --green: #59c45a;
+  --grey: #a3a3a3;
+  --darkgrey: #bfbfbf;
+  --font: Lato, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--font);
+}
+
+/*#endregion COMMONS*/
+
+/*#region===========HEADER==========*/
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--green);
+  border: 2px solid var(--grey);
+  padding: 12px 21px;
+  position: relative;
+}
+
+.logo::after {
+  content: "TRAVEL";
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 15px;
+  left: 40px;
+  top: 45px;
+  background-color: var(--white);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__link {
+  display: block;
+  padding: 55px 23px 56px;
+  color: var(--grey);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.nav-button {
+  display: none;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+/*#endregion HEADER*/
+
+@import url(../css/media.css);
