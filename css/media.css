@@ -8,6 +8,14 @@
   .header__logo {
     margin-bottom: 15px;
   }
+
+  .favorable__item {
+    width: 100%;
+  }
+
+  .favorable__img {
+    width: 30%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -33,6 +41,17 @@
 
   .nav-button {
     display: block;
-   
+  }
+}
+
+@media (max-width: 600px) {
+  .favorable__item {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .favorable__img {
+    width: 70%;
+    margin: 0 auto;
   }
 }
